@@ -33,8 +33,8 @@ public class StateChangeDispatcher {
 		QueueConnection queueConnection = queueConnectionFactory.createQueueConnection();
 		QueueSession qs = queueConnection.createQueueSession(false, QueueSession.AUTO_ACKNOWLEDGE);
 		
-		//Destination destination =	(Destination)ict.lookup("/queue/lklPTPDistributedQueue");
-		Destination destination =	(Destination)ict.lookup("queue/lklPTPDistributedQueue");
+		//Destination destination =	(Destination)ict.lookup("/queue/sectPTPDistributedQueue");
+		Destination destination =	(Destination)ict.lookup("queue/sectPTPDistributedQueue");
 		MessageProducer messageProducer = qs.createProducer(destination);
 		Product product = new Product();
 		product.setInfo("create by time "+(new Date())+"/r/n ip:"+InetAddress.getLocalHost().getHostAddress());

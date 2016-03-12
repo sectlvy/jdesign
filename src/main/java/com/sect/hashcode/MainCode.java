@@ -38,7 +38,7 @@ public class MainCode {
 	}
 	
 	private void logInfo(String info){
-		Logger logger = Logger.getLogger("lkl");
+		Logger logger = Logger.getLogger("sect");
 		logger.info(info);
 	}
 }

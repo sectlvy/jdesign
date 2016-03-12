@@ -28,7 +28,7 @@ import com.sun.jersey.spi.inject.Inject;
 				),
 				@ActivationConfigProperty(
 						propertyName="destination",
-						propertyValue="queue/lklPTPDistributedQueue"
+						propertyValue="queue/sectPTPDistributedQueue"
 				)
 		}
 )
